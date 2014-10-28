@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/CarProductPic"
+        android:layout_width="90dp"
+        android:layout_height="130dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/bid0001" />
+
+    <TextView
+        android:id="@+id/carbookName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/CarProductPic"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/carbookPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/carbookName"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/CarProductPic"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/carbookQut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/carbookName"
+        android:layout_toRightOf="@id/carbookPrice"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tvTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/carbookPrice"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/CarProductPic"
+        android:textSize="15sp" />
+        
+    <TextView
+        android:id="@+id/tvTax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/carbookQut"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/tvTotal"
+        android:textSize="15sp" />
+
+    
+
+    <Button
+        android:id="@+id/bremove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTotal"
+        android:layout_toRightOf="@id/CarProductPic"
+        android:text="remove"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/bupdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTotal"
+        android:layout_toRightOf="@id/bremove"
+        android:text="Update"
+        android:textSize="15sp" />
+        
+
+</RelativeLayout>
